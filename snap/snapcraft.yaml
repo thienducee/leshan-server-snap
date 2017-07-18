@@ -1,0 +1,20 @@
+name: leshan-server
+version: '1.0'
+summary: Leshan is an OMA Lightweight M2M server and client Java implementation.
+description: Leshan provides libraries which help people to develop their own Lightweight M2M server and client
+
+grade: devel
+
+confinement: devmode
+
+apps:
+  leshan-server:
+    command: leshan-server
+
+parts:
+  leshan:
+    plugin: maven
+    source: https://github.com/thienducee/leshan-server-snap.git
+    source-type: git
+    
+
